@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      
+      #navbar{
+        transition: 0.3s;
+        position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+      }
+      a:hover{
+        border: 2px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 5px;
+      }
+     
+.contact2 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+	padding: 60px 0;
+  margin-bottom: 170px;
+  background-position: center top;
+}
+
+.contact2 h1,
+.contact2 h2,
+.contact2 h3,
+.contact2 h4,
+.contact2 h5,
+.contact2 h6 {
+  color: #3e4555;
+}
+
+.contact2 .font-weight-medium {
+  font-weight: 500;
+}
+
+.contact2 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.contact2 .bg-image {
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact2 .card.card-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.contact2 .detail-box .round-social {
+  margin-top: 100px;
+}
+
+.contact2 .round-social a {
+  background: transparent;
+  margin: 0 7px;
+  padding: 11px 12px;
+}
+
+.contact2 .contact-container .links a {
+  color: #8d97ad;
+}
+
+.contact2 .contact-container {
+  position: relative;
+  top: 200px;
+}
+#im:hover{
+  box-shadow: 5px 7px gray;
+}
+.contact2 .btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary" style="z-index: -50px;">
+      <img src="logo.svg" alt="" style="margin-left: 30px;">
+      <div class="container-fluid text-center " style="margin-left: 460px;font-size: 30px;">
+        
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#home" id="a"><label for="a">Home</label> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ser" id="b"><label for="b">Services</label></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#test" id="c"><label for="c">Testimonials</label></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#abt" id="d"><label for="d">About Us</label></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#con" id="e"><label for="e">Contact Us</label></a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <button
+        class="btn p-4 ms-5 me-3"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        <img src="menu.png" alt="" width="50" height="40" />
+      </button>
+    </nav>
+
+    <script>
+     
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.top = "100";
+        } else {
+          document.getElementById("navbar").style.top = "0px";
+        }
+      }
+      </script>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h1 id="offcanvasRightLabel"></h1>
+        <br>
+        <nav class="nav flex-column" style="font-size: 40px;">
+          <a class="nav-link active" aria-current="page" href="#abt">About Us</a>
+          <a class="nav-link" href="#con">Contact Us</a>
+          
+        </nav>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">...</div>
+    </div>
+    <div id="home">
+      <div>
+        <img
+          src="new.gif"
+          alt=""
+          class="m-5 rounded-5"
+          width="1870"
+          height="920"
+        />
+      </div>
+      <div
+        class="rounded-5 m-5 text-white"
+        style="width: 1870px; height: 920px; position: absolute; top: 0"
+      >
+        <h1
+          style="
+            font-size: 90px;
+            padding-top: 15%;
+            padding-left: 5%;
+            background-color: transparent;
+          "
+        >
+          Weboin - <br />Connecting brands <br />with people
+        </h1>
+        <button
+          class="btn btn-close-white btn-lg btn-primary"
+          style="
+            margin-left: 5%;
+            margin-top: 2%;
+            padding: 2%;
+            border-radius: 12%;
+          "
+        >
+          About Us
+        </button>
+      </div>
+    </div>
+    <div class="mt-3 " id="ser" style="background-image: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');background-repeat: no-repeat;background-size: cover;"  >
+      
+      <h1 class="" style="font-size: 80px;margin-left: 180px; margin-right: 180px;">
+        Here are some of the <br />services we can provide
+      </h1>
+      <br /><br />
+      <p style="font-size: 30px;margin-left: 180px; margin-right: 180px;">
+        Introducing our comprehensive digital marketing services, designed to
+        <br>propel your business to new heights and establish your brand as a
+        <br>digital leader. Our team of skilled professionals is committed to
+        <br>delivering tailored strategies that drive tangible results and maximize
+        <br>your online presence.
+      </p>
+     
+      <div style="margin-left: 200px;">
+      <div class="container text-center " style="margin-left: 30px;">
+  <div class="row">
+    <div class="col m-4 bg-body-secondary rounded-4 shadow" style="width: 450px;height: 300px;">
+      <h1 class="mt-3">
+        Email marketing</h1>
+        <p style="font-size: 25px;">We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
+        <button class="btn btn-primary">Explore</button>
+    </div>
+    <div class="col bg-body-secondary rounded-4 shadow m-4"  style="width: 450px;height: 300px;">
+      <h1 class="mt-3">
+        Display marketing</h1>
+        <p style="font-size: 25px;">We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
+        <button class="btn btn-primary">Explore</button>
+    </div>
+    <div class="col  bg-body-secondary rounded-4 shadow m-4" style="width: 450px;height: 300px;">
+      <h1 class="mt-3">Social Media marketing</h1>
+      <p style="font-size: 25px;">We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
+        <button class="btn btn-primary">Explore</button>
+    </div>
+  </div>
+  <div class="container text-center" style="margin-left: 110px;">
+    <div class="row">
+      <div class="col m-4 bg-body-secondary rounded-4 shadow" style="width: 450px;height: 300px;">
+        <h1 class="mt-3">Web Audit</h1>
+        <p style="font-size: 25px;">We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
+        <button class="btn btn-primary">Explore</button>
+      </div>
+      <div class="col bg-body-secondary rounded-4 shadow m-4"  style="width: 450px;height: 300px;">
+        <h1 class="mt-3">Market Flexibility</h1>
+        <p style="font-size: 25px;">We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
+        <button class="btn btn-primary">Explore</button>
+      </div>
+      <div class="col  bg-body-secondary rounded-4 shadow m-4" style="width: 450px;height: 300px;">
+        <h1 class="mt-3">
+          Ad Strategy</h1>
+          <p style="font-size: 25px;">We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
+        <button class="btn btn-primary">Explore</button>
+      </div>
+    </div>
+  
+    <div style="margin-left: 1200px;position:absolute;top: 1140px;">
+    <img src="service.png" alt="" width="400px" height="400px">
+    </div>
+</div>
+      </div>
+</div>
+      
+<div style="background-image: url('white.jpg');padding-left: 50px;margin-top: 80px;" id="test">
+<h1 style="font-size: 80px;">
+  In Their Own Words:
+  <br>Testimonials from Satisfied Clients
+</h1>
+<p style="font-size: 40px;">
+  Here, you'll find a collection of authentic testimonials from business owners, marketers, and professionals who have entrusted us with their digital marketing needs. They share their stories of success, highlighting the impact our strategies and solutions have had on their businesses.
+
+</p>
+<div class="container" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col col-lg-4  ">
+      <h3 class="text-center text-bg-secondary ">John</h3>
+      <p style="font-size: 30px;">Thanks to the professional service and execution from the team at Weboin Technologies Design, we were able to create four attractive and functional websites of our desire. We are most pleased with the services assisted by the Project Manager.</p>
+    </div>
+    <div class="col  col-lg-4">
+      <h3 class="text-center text-bg-secondary">Peter</h3>
+      <p style="font-size: 30px;">We are working with Weboin Technologies for the past 2 years, We are happy with their services. They are very supportive in all aspects. I am recommending this company for the successful delivery of your dream projects no matter how diverse your projects are.</p>
+    </div>
+    <div class="col  col-lg-4">
+      <h3 class="text-center text-bg-secondary">Tony</h3>
+      <p style="font-size: 30px;">We had a great experience working with Weboin. Thank you so much for providing us in-depth knowledge and commitment. Special thanks to Saravanan and his team for his professionalism and always accommodating our requests.</p>
+  </div>
+</div>
+</div>
+
+</div>
+<div id="abt">
+  <h1 style="font-size: 80px;margin-top: 40px;" align="center">About Us</h1>
+  <p style="font-size: 30px;margin: 50px;">We’re a fully distributed team of 80 people living and working in 20 countries around the world. And we’re working to build the best products to help our customers build their brands and grow their businesses on social media.
+
+  </p>
+  <p style="font-size: 30px;margin: 50px;">We’ve always aimed to do things a little differently at Buffer. Since the early days, we’ve had a focus on building one of the most unique and fulfilling workplaces by rethinking a lot of traditional practices.</p>
+  <p style="font-size: 30px;margin: 50px;">A commitment to supporting our team and our customers has helped Buffer grow from humble beginnings to now serving more than 140,000 users. Our passion for making meaningful connections flows through everything we do.
+
+    <br>We care about building a quality product, trusted relationships with our customers, and a sense of community that connects our customers and team with one another.</p>
+</div>
+<div id="con">
+
+<div class="contact2" style="background-image:url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/map.jpg)" id="contact">
+  <div class="container">
+    <div class="row contact-container">
+      <div class="col-lg-12">
+        <div class="card card-shadow border-0 mb-4">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="contact-box p-4">
+                <h4 class="title">Contact Us</h4>
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group mt-3">
+                        <input class="form-control" type="text" placeholder="name">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mt-3">
+                        <input class="form-control" type="text" placeholder="email">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mt-3">
+                        <input class="form-control" type="text" placeholder="phone">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mt-3">
+                        <input class="form-control" type="text" placeholder="location">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group mt-3">
+                        <input class="form-control" type="text" placeholder="message">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <button type="submit" class="btn btn-danger-gradiant mt-3 mb-3 text-white border-0 py-2 px-3"><span> SUBMIT NOW <i class="ti-arrow-right"></i></span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-4 bg-image" style="background-image:url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/1.jpg)">
+              <div class="detail-box p-4">
+                <h5 class="text-white font-weight-light mb-3">ADDRESS</h5>
+                <p class="text-white op-7">601 Lucknow.
+                  <br> India</p>
+                <h5 class="text-white font-weight-light mb-3 mt-4">CALL US</h5>
+                <p class="text-white op-7">7777777777
+                  <br> 630 446 8851</p>
+                <div class="">
+                  <a href="https://www.facebook.com/abdullah.ansari.98284566/" class="ml-0 text-decoration-none text-white border border-white rounded-circle"><img src="fb.png" alt="" height="50px" width="50px" id="im"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+      <footer class="card-footer text-body-secondary " align="center">Copyright @UltronCorp</footer>
+  </body>
+</html>
